@@ -1,10 +1,14 @@
-Team name:
+Team name: Team Algorithm
 
-Team members:
+Team members: 
+- Zhen Lu
+- Astha Thapa
+- Olubunmi Ashade
+- Onamudiana Charles Okoruwa
 
 # Introduction
+The project is a web tool that intends to help students who have difficulty finding open source book resources online. With an easy to use interface and simple yet effective design, this application will help students to solve this issues quickly.
 
-(In 2-4 paragraphs, describe your project concept)
 
 # Anticipated Technologies
 
