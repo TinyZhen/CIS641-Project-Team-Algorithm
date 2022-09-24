@@ -7,16 +7,18 @@ Team members:
 - Onamudiana Charles Okoruwa
 
 # Introduction
-The project is a web tool that intends to help students who have difficulty finding open source book resources online. With an easy to use interface and simple yet effective design, this application will help students to solve this issues quickly.
+The project is a web tool that intends to help students who have difficulty finding open source book resources online. With an easy to use interface and simple yet effective design, this application will act as a center point where student can find the e-books as desired.
 
 
 # Anticipated Technologies
 
-(What technologies are needed to build this project)
+Front-end tools: HTML, CSS, Javascript, Jquery, Bootstrap, Datatables
+Back-end tools: Python
+Database: Open APIs datasources
 
 # Method/Approach
+Agile Methodology
 
-(What is your estimated "plan of attack" for developing this project)
 
 # Estimated Timeline
 
