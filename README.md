@@ -7,7 +7,7 @@ Project description (~1 paragraph)
 * Zhen Lu()
 * Astha Thapa()
 * Olubunmi Ashade() 
-* Onamudiana Okoruwa()
+* [Onamudiana Charles Okoruwa](https://github.com/Charlesonos/CIS641-HW2-Okoruwa.git)
 
 
 ## Prerequisites
