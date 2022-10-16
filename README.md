@@ -12,6 +12,6 @@ This application will reduce the student's frustration of accessing books. Stude
 * [Onamudiana Charles Okoruwa](https://github.com/Charlesonos/CIS641-HW2-Okoruwa.git) (TEAM MEMBER)
 
 ## Porject Direction
-[Artifacts](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts)
-[Documents](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/docs)
-[Requirements](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/blob/master/docs/software_requirements_specification.md)
+* [Artifacts](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts)
+* [Documents](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/docs)
+* [Requirements](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/blob/master/docs/software_requirements_specification.md)
