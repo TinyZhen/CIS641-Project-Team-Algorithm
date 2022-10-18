@@ -1378,7 +1378,7 @@ ul.pagination .active a {
   margin-left: 3px;
 }
 .book-details .content {
-  padding-top: 25px !important;
+  padding-top: 10px !important;
   margin-top: 0px !important;
 }
 .book-details .content h3 {
@@ -2216,6 +2216,11 @@ form textarea {
 }
 /*----- Home Page CSS ends here -----*/
 
+.userActions{
+  letter-spacing: 0px !important;
+  padding: 12px !important;
+  margin-right: 10px;
+}
 
 @media (max-width: 768px) {
   .scroll-top-to {
