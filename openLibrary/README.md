@@ -17,6 +17,6 @@ The project is a web tool that intends to help students who have difficulty find
 <ol>
 <li>Install the requirements</li>
 <li>Install required dependencies (this usually happens automatically if you are using Netbeans, vscode or intellij)</li>
-<li>use "grails run-app" command to the run the application locally</li>
+<li>use "grails run-app" command to the run the application locally from terminal else click run on the code editor</li>
 <li> Application will run on terminal and you should be able to access the local application in your localhost:8080 port</li>
 </ol>
