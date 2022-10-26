@@ -12,12 +12,11 @@ The project is a web tool that intends to help students who have difficulty find
 <li><b>gradleVersion=5.1.1</b></li>
 <li><b>jdkVersion=1.8</b></li>
 </ul>
-----------------------------------------
 
 # Run Instructions
 <ol>
 <li>Install the requirements</li>
-<li>Install required dependencies</li>
-<li>use grails run-app to the run the application locally</li>
+<li>Install required dependencies (this usually happens automatically if you are using Netbeans, vscode or intellij)</li>
+<li>use "grails run-app" command to the run the application locally</li>
 <li> Application will run on terminal and you should be able to access the local application in your localhost:8080 port</li>
 </ol>
