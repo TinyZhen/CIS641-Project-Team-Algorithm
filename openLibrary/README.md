@@ -8,8 +8,8 @@ The project is a web tool that intends to help students who have difficulty find
 
 # Requirements
 <ul>
-<li><b>grailsVersion=4.0.5</b></li>
-<li><b>gradleVersion=5.1.1</b></li>
+<li><b>grailsVersion=5.0.1</b></li>
+<li><b>gradleVersion=7.3</b></li>
 <li><b>jdkVersion=1.8</b></li>
 </ul>
 
