@@ -14,8 +14,8 @@
     <meta charset="utf-8"/>
     <title>Open Library</title>
 
-    <!-- favicon -->
-    <asset:image src="tab-icon.png" rel="shortcut icon"/>
+    <!-- favicon
+    <asset:image src="tab-icon.png" rel="shortcut icon"/> -->
 
     <!--Style sheets-->
     <asset:stylesheet src="bootstrap.min.css"/>
@@ -40,6 +40,7 @@
     <asset:javascript  src="jquery.nice-select.min.js"/>
 
     <asset:javascript  src="script.js"/>
+
 </head>
 
 <body class="body-wrapper">
@@ -131,7 +132,7 @@
                                 <div class="thumb-content">
                                     <!-- <div class="price">$200</div> -->
                                     <a href="#">
-                                        <asset:image src="books/book-1.jpg"
+                                        <asset:image src="books/book-1.jpg" width="170px"
                                              alt="Card image cap"/>
                                     </a>
                                 </div>
@@ -167,7 +168,7 @@
                             <div class="card">
                                 <div class="thumb-content">
                                     <a href="#">
-                                        <asset:image src="books/book-1.jpg"
+                                        <asset:image src="books/book-1.jpg" width="170px"
                                              alt="Card image cap"/>
                                     </a>
                                 </div>
@@ -202,7 +203,7 @@
                             <div class="card">
                                 <div class="thumb-content">
                                     <a href="#">
-                                        <asset:image src="books/book-1.jpg"
+                                        <asset:image src="books/book-1.jpg" width="170px"
                                              alt="Card image cap"/>
                                     </a>
                                 </div>
@@ -237,7 +238,7 @@
                             <div class="card">
                                 <div class="thumb-content">
                                     <a href="#">
-                                        <asset:image src="books/book-1.jpg"
+                                        <asset:image src="books/book-1.jpg" width="170px"
                                              alt="Card image cap"/>
                                     </a>
                                 </div>
