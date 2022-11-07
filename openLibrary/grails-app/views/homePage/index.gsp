@@ -6,40 +6,53 @@
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" %>
-<html lang="en">
+<html lang="en"/>
+
 <head>
 
     <!-- ** Basic Page Needs ** -->
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
     <title>Open Library</title>
 
     <!-- favicon -->
-    <link href="images/tab-icon.png" rel="shortcut icon">
+    <asset:image src="tab-icon.png" rel="shortcut icon"/>
 
     <!--Style sheets-->
-    <asset:stylesheet src="bootstrap/bootstrap.min.css"/>
+    <asset:stylesheet src="bootstrap.min.css"/>
 
-    <link href="plugins/bootstrap/bootstrap-slider.css" rel="stylesheet">
-    <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="plugins/slick/slick.css" rel="stylesheet">
-    <link href="plugins/slick/slick-theme.css" rel="stylesheet">
-    <link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+    <asset:stylesheet src="bootstrap-slider.css"/>
+    <asset:stylesheet src="font-awesome.min.css"/>
+    <asset:stylesheet src="slick.css"/>
+    <asset:stylesheet src="slick-theme.css"/>
+    <asset:stylesheet src="nice-select.css"/>
 
     <!--Custom stylesheet-->
-    <link href="css/style.css" rel="stylesheet">
+    <! --asset: href="css/style.css" rel="stylesheet"-->
 
+    <!-- Essential Scripts -->
+    <asset:javascript  src="jquery-3.3.1.min.js"/>
+    <asset:javascript  src="popper.min.js"/>
+    <asset:javascript  src="bootstrap.min.js"/>
+    <asset:javascript  src="bootstrap-slider.js"/>
+    <asset:javascript  src="tether.min.js"/>
+    <asset:javascript  src="jquery.raty-fa.js"/>
+    <asset:javascript  src="slick.min.js"/>
+    <asset:javascript  src="jquery.nice-select.min.js"/>
+
+    <asset:javascript  src="script.js"/>
 </head>
 
 <body class="body-wrapper">
 
 
 <header>
+
     <div class="container" style="max-width: 100%">
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-lg navbar-light navigation" style="height: 55px">
                     <a class="navbar-brand" href="index.html">
-                        <img width="170px" src="images/openLibrary-logo.png" alt="page-logo">
+                        <asset:image src="openLibrary-logo.png" width="170px" alt="page-logo"/>
                     </a>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -118,8 +131,8 @@
                                 <div class="thumb-content">
                                     <!-- <div class="price">$200</div> -->
                                     <a href="#">
-                                        <img class="card-img-top img-fluid bookImg" src="images/books/book-1.jpg"
-                                             alt="Card image cap">
+                                        <asset:image src="books/book-1.jpg"
+                                             alt="Card image cap"/>
                                     </a>
                                 </div>
                                 <div class="card-body">
@@ -154,8 +167,8 @@
                             <div class="card">
                                 <div class="thumb-content">
                                     <a href="#">
-                                        <img class="card-img-top img-fluid bookImg" src="images/books/book-1.jpg"
-                                             alt="Card image cap">
+                                        <asset:image src="books/book-1.jpg"
+                                             alt="Card image cap"/>
                                     </a>
                                 </div>
                                 <div class="card-body">
@@ -189,8 +202,8 @@
                             <div class="card">
                                 <div class="thumb-content">
                                     <a href="#">
-                                        <img class="card-img-top img-fluid bookImg" src="images/books/book-1.jpg"
-                                             alt="Card image cap">
+                                        <asset:image src="books/book-1.jpg"
+                                             alt="Card image cap"/>
                                     </a>
                                 </div>
                                 <div class="card-body">
@@ -224,8 +237,8 @@
                             <div class="card">
                                 <div class="thumb-content">
                                     <a href="#">
-                                        <img class="card-img-top img-fluid bookImg" src="images/books/book-1.jpg"
-                                             alt="Card image cap">
+                                        <asset:image src="books/book-1.jpg"
+                                             alt="Card image cap"/>
                                     </a>
                                 </div>
                                 <div class="card-body">
@@ -234,7 +247,7 @@
                                         <li class="list-inline-item">
                                             <a href="#"><i class="fa fa-folder-open-o"></i>Biography</a>
                                         </li>
-                                        <li class="list-inline-item">
+                                        <div class="list-inline-item">
                                             <a href="#"><i class="fa fa-calendar"></i>1989</a>
                                         </li>
                                     </ul>
@@ -283,19 +296,10 @@
     <div class="scroll-top-to">
         <i class="fa fa-angle-up"></i>
     </div>
+
 </footer>
 
-<!-- Essential Scripts -->
-<script src="plugins/jquery/jquery.min.js"></script>
-<script src="plugins/bootstrap/popper.min.js"></script>
-<script src="plugins/bootstrap/bootstrap.min.js"></script>
-<script src="plugins/bootstrap/bootstrap-slider.js"></script>
-<script src="plugins/tether/js/tether.min.js"></script>
-<script src="plugins/raty/jquery.raty-fa.js"></script>
-<script src="plugins/slick/slick.min.js"></script>
-<script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script>
 
-<script src="script.js"></script>
 
 </body>
 
