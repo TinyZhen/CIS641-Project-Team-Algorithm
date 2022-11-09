@@ -12,10 +12,10 @@
 
     <!-- ** Basic Page Needs ** -->
     <meta charset="utf-8"/>
-    <title>Open Library</title>
+    <title>Open Library Search Engine</title>
 
-    <!-- favicon
-    <asset:image src="tab-icon.png" rel="shortcut icon"/> -->
+    <!-- favicon -->
+    <asset:link href="tab-icon.png" rel="shortcut icon" type="image/x-icon"/>
 
     <!--Style sheets-->
     <asset:stylesheet src="bootstrap.min.css"/>
@@ -27,7 +27,7 @@
     <asset:stylesheet src="nice-select.css"/>
 
     <!--Custom stylesheet-->
-    <! --asset: href="css/style.css" rel="stylesheet"-->
+    <asset:stylesheet src="style.css" />
 
     <!-- Essential Scripts -->
     <asset:javascript  src="jquery-3.3.1.min.js"/>
@@ -52,14 +52,14 @@
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-lg navbar-light navigation" style="height: 55px">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="../index.gsp">
                         <asset:image src="openLibrary-logo.png" width="170px" alt="page-logo"/>
                     </a>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto mt-10">
                             <li class="nav-item">
-                                <a class="nav-link login-button" href="login.html">Login</a>
+                                <a class="nav-link login-button" href="login.gsp">Login</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white add-button" href="#">Sign up</a>
@@ -88,14 +88,16 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-12 col-md-12 align-content-center">
-                                <form action="bookDetail.html">
+                                <form>
+
                                     <div class="form-row">
                                         <div class="form-group col-xl-10 col-lg-10 col-md-10">
                                             <input type="text" class="form-control my-2 my-lg-1" id="inputtext4"
                                                    placeholder="Search a book by Title">
                                         </div>
                                         <div class="form-group col-xl-2 col-lg-2 col-md-2 align-self-center">
-                                            <button type="submit" class="btn btn-primary active w-100">Find my book
+                                            <button type="submit" formaction="/searchList"class="btn btn-primary active w-100">
+                                                Search
                                             </button>
                                         </div>
                                     </div>
