@@ -3,6 +3,10 @@
 
 <head>
     <title>Search Result</title>
+
+    <!-- favicon -->
+    <asset:link href="tab-icon.png" rel="shortcut icon" type="image/x-icon"/>
+
     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
     <meta name="description" content="Use this HTML basic website three fixed column layout template with the extra stuff on the left, the main content at the center, the navigation menu on the right.">
     <meta name="generator" content="HAPedit 3.1">
