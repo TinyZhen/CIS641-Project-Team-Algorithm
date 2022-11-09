@@ -62,7 +62,7 @@
                                 <a class="nav-link login-button" href="/login">Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white add-button" href="#">Sign up</a>
+                                <a class="nav-link text-white add-button" href="/signup">Sign up</a>
                             </li>
                         </ul>
                     </div>
