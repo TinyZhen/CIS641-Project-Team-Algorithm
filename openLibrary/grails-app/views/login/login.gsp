@@ -11,7 +11,7 @@
 <head>
     <!-- ** Basic Page Needs ** -->
     <meta charset="utf-8"/>
-    <title>Open Library Search Engine</title>
+    <title>Login</title>
 
     <!-- favicon -->
     <asset:link href="tab-icon.png" rel="shortcut icon" type="image/x-icon"/>
@@ -79,7 +79,7 @@
                                     style="padding: 8px 20px;float: right">Log in
                             </button>
                             <a class="mt-3 d-block text-primary" style="clear: right" href="#">Forget Password?</a>
-                            <p class="mt-3 d-block">Don't have an account? <a class="text-primary" href="#">Sign up here</a></p>
+                            <p class="mt-3 d-block">Don't have an account? <a class="text-primary" href="/signUp">Sign up here</a></p>
                         </fieldset>
                     </form>
                 </div>

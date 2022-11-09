@@ -2,24 +2,36 @@
 <html lang="en"/>
 
 <head>
+    <!-- ** Basic Page Needs ** -->
+    <meta charset="utf-8"/>
     <title>Search Result</title>
 
     <!-- favicon -->
     <asset:link href="tab-icon.png" rel="shortcut icon" type="image/x-icon"/>
 
-    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
-    <meta name="description" content="Use this HTML basic website three fixed column layout template with the extra stuff on the left, the main content at the center, the navigation menu on the right.">
-    <meta name="generator" content="HAPedit 3.1">
-    <link rel="canonical" href="https://www.w3docs.com/snippets/html/layout_templates/08.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="HTML FlexBox Template - Three fixed columns, centered content" />
-    <meta property="og:description" content="Use this HTML basic website three fixed column layout template with the extra stuff on the left, the main content at the center, the navigation menu on the right." />
-    <meta property="og:image" content="https://www.w3docs.com/build/images/logo-amp.png" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="192" />
-    <meta property="og:image:height" content="192" />
-    <meta property="og:image:alt" content="W3dcos" />
-    <style type="text/css">
+    <!--Style sheets-->
+    <asset:stylesheet src="bootstrap.min.css"/>
+
+    <asset:stylesheet src="bootstrap-slider.css"/>
+    <asset:stylesheet src="font-awesome.min.css"/>
+    <asset:stylesheet src="slick.css"/>
+    <asset:stylesheet src="slick-theme.css"/>
+    <asset:stylesheet src="nice-select.css"/>
+
+    <!--Custom stylesheet-->
+    <asset:stylesheet src="style.css" />
+
+    <!-- Essential Scripts -->
+    <asset:javascript  src="jquery-3.3.1.min.js"/>
+    <asset:javascript  src="popper.min.js"/>
+    <asset:javascript  src="bootstrap.min.js"/>
+    <asset:javascript  src="bootstrap-slider.js"/>
+    <asset:javascript  src="tether.min.js"/>
+    <asset:javascript  src="jquery.raty-fa.js"/>
+    <asset:javascript  src="slick.min.js"/>
+    <asset:javascript  src="jquery.nice-select.min.js"/>
+
+    <asset:javascript  src="script.js"/>
     html, body {
         margin: 0;
         padding: 0;
@@ -121,6 +133,24 @@
     </style>
 </head>
 <body>
+
+
+
+<header>
+    <div class="container" style="max-width: 100%">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light navigation" style="height: 55px">
+                    <a class="navbar-brand" href="/">
+                        <asset:image src="openLibrary-logo.png" width="170px" alt="page-logo"/>
+                    </a>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
 <div id="container">
     <div id="header">
         <h1>Header</h1>
@@ -201,6 +231,6 @@
 
         </footer>
 </div>
-<script type="text/javascript">AddFillerLink("content", "navigation", "extra")</script>
+
 </body>
 </html>
