@@ -75,7 +75,7 @@
                             <button type="submit" class="btn btn-primary font-weight-bold mt-3"
                                     style="padding: 8px 20px;float: right">Sign up
                             </button>
-                            <p class="mt-3 d-block">Already have an account? <a class="text-primary" href="/login">Login</a></p>
+                            <p class="mt-3 d-block">Already have an account? <a class="text-primary" href="/logIn">Login</a></p>
                         </fieldset>
                     </form>
                 </div>

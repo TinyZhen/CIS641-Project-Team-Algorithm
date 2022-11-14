@@ -53,7 +53,6 @@
                     <a class="navbar-brand" href="/">
                         <asset:image src="openLibrary-logo.png" width="170px" alt="page-logo"/>
                     </a>
-
                 </nav>
             </div>
         </div>

@@ -1,6 +1,6 @@
 package openlibrary
 
-class errorController {
+class ErrorController {
     def index(){
         render(view: 'error.gsp')
     }

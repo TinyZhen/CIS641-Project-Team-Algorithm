@@ -1,7 +1,7 @@
 package openlibrary
 
-class searchListController {
+class SearchListController {
     def index (){
-        render(view: "/searchList/test.gsp");
+        render(view: "/searchList/list.gsp");
     }
 }

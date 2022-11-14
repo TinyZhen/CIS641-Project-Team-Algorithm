@@ -1,6 +1,6 @@
 package openlibrary
 
-class notFoundController {
+class NotFoundController {
     def index(){
         render(view:'notFound.gsp')
     }

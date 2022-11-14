@@ -59,7 +59,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto mt-10">
                             <li class="nav-item">
-                                <a class="nav-link login-button" href="/login">Login</a>
+                                <a class="nav-link login-button" href="/logIn">Login</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white add-button" href="/signup">Sign up</a>
@@ -96,7 +96,7 @@
                                                    placeholder="Search a book by Title">
                                         </div>
                                         <div class="form-group col-xl-2 col-lg-2 col-md-2 align-self-center">
-                                            <button type="submit" formaction="/searchList"class="btn btn-primary active w-100">
+                                            <button type="submit" formaction="/result"class="btn btn-primary active w-100">
                                                 Search
                                             </button>
                                         </div>

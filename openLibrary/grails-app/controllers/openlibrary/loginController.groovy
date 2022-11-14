@@ -1,6 +1,6 @@
 package openlibrary
 
-class loginController {
+class LogInController {
     def index(){
         render(view:'/login/login.gsp')
     }

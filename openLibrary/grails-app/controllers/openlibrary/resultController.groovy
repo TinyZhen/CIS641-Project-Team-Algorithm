@@ -1,7 +1,7 @@
 package openlibrary
 
-class resultController {
+class ResultController {
     def index(){
-
+        render(view:'/result/result.gsp')
     }
 }
