@@ -38,19 +38,33 @@
 
 <body class="body-wrapper">
 
+
 <header>
+
     <div class="container" style="max-width: 100%">
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-lg navbar-light navigation" style="height: 55px">
-                    <a class="navbar-brand" href="index.html">
-                        <asset:image src="openLibrary-logo.png" width="170px" alt="page-logo">
+                    <a class="navbar-brand" href="/">
+                        <asset:image src="openLibrary-logo.png" width="170px" alt="page-logo"/>
                     </a>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto mt-10">
+                            <li class="nav-item">
+                                <a class="nav-link login-button" href="/logIn">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white add-button" href="/signup">Sign up</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
     </div>
 </header>
+
 
 <!--Page Search -->
 <!--<section class="page-search">-->
@@ -135,7 +149,7 @@
                                 <div class="book-review">
                                     <div class="media">
                                         <!-- Avater -->
-                                        <asset:image src="userPhoto-1.png" alt="avater">
+                                        <asset:image src="user/userPhoto-1.png" alt="avater"/>
                                         <div class="media-body">
                                             <!-- Ratings -->
                                             <div class="ratings">
@@ -198,7 +212,7 @@
                 <div class="sidebar">
                     <!-- Book Cover -->
                     <div class="widget user text-center">
-                        <asset:image src="book2.png" alt="">
+                        <asset:image src="books/book2.png" width="170px" alt=""/>
                         <button class="btn btn-transparent userActions" style="margin-left: 17px!important;">Preview book</button>
                         <button class="btn btn-transparent userActions">Add to my list</button>
                     </div>
@@ -208,7 +222,7 @@
                     <!-- Author Profile widget -->
                     <div class="widget user text-center" style="padding-top: 10px">
                         <h3 style="padding: 8px">About the Author</h3>
-                        <asset:image src="author1.PNG" alt="">
+                        <asset:image src="books/author1.PNG" width="170px" alt=""/>
                         <h4><a href="user-profile.html">Jane Austen</a></h4>
                         <a href="single.html">See other books of the author</a>
                     </div>
