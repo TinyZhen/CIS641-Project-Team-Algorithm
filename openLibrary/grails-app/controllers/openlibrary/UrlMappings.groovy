@@ -10,7 +10,7 @@ class UrlMappings {
         }
 
         "/"(controller: 'homePage' , action: 'index')
-        "/searchList"(controller: 'searchList', action: 'index')
+        "/searchList"(controller: 'SearchList', action: 'index')
         "/searchList/result"(controller: 'result',action: 'index')
         "/login"(controller: 'login',action: 'index')
         "/signup"(controller: 'signUp',action: 'index')

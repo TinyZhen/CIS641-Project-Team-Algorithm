@@ -27,24 +27,23 @@
     <asset:stylesheet src="nice-select.css"/>
 
     <!--Custom stylesheet-->
-    <asset:stylesheet src="style.css" />
+    <asset:stylesheet src="style.css"/>
 
     <!-- Essential Scripts -->
-    <asset:javascript  src="jquery-3.3.1.min.js"/>
-    <asset:javascript  src="popper.min.js"/>
-    <asset:javascript  src="bootstrap.min.js"/>
-    <asset:javascript  src="bootstrap-slider.js"/>
-    <asset:javascript  src="tether.min.js"/>
-    <asset:javascript  src="jquery.raty-fa.js"/>
-    <asset:javascript  src="slick.min.js"/>
-    <asset:javascript  src="jquery.nice-select.min.js"/>
+    <asset:javascript src="jquery-3.3.1.min.js"/>
+    <asset:javascript src="popper.min.js"/>
+    <asset:javascript src="bootstrap.min.js"/>
+    <asset:javascript src="bootstrap-slider.js"/>
+    <asset:javascript src="tether.min.js"/>
+    <asset:javascript src="jquery.raty-fa.js"/>
+    <asset:javascript src="slick.min.js"/>
+    <asset:javascript src="jquery.nice-select.min.js"/>
 
-    <asset:javascript  src="script.js"/>
+    <asset:javascript src="script.js"/>
 
 </head>
 
 <body class="body-wrapper">
-
 
 <header>
 
@@ -81,6 +80,7 @@
                 <!-- Header Content -->
                 <div class="content-block">
                     <h1>"I have always imagined paraside will be a kind of library"</h1>
+
                     <p><i>Jorge Luis Borges</i></p>
                 </div>
                 <!-- Advance Search -->
@@ -88,15 +88,17 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-12 col-md-12 align-content-center">
-                                <form>
+                                <form id="searchBar" action="${createLink(controller: 'searchList', action: 'index')}"
+                                      method="GET" autocomplete="off">
 
                                     <div class="form-row">
                                         <div class="form-group col-xl-10 col-lg-10 col-md-10">
-                                            <input type="text" class="form-control my-2 my-lg-1" id="inputtext4"
+                                            <input type="text" class="form-control my-2 my-lg-1" name="searchKey"
                                                    placeholder="Search a book by Title">
                                         </div>
+
                                         <div class="form-group col-xl-2 col-lg-2 col-md-2 align-self-center">
-                                            <button type="submit" formaction="/result"class="btn btn-primary active w-100">
+                                            <button class="btn btn-primary active w-100">
                                                 Search
                                             </button>
                                         </div>
@@ -119,10 +121,12 @@
             <div class="col-md-12">
                 <div class="section-title">
                     <h2>Trending Book of the Month!</h2>
+
                     <p>Select and add it to your library for free!</p>
                 </div>
             </div>
         </div>
+
         <div class="row">
 
             <div class="col-lg-12">
@@ -135,9 +139,10 @@
                                     <!-- <div class="price">$200</div> -->
                                     <a href="#">
                                         <asset:image src="books/book-1.jpg" width="170px"
-                                             alt="Card image cap"/>
+                                                     alt="Card image cap"/>
                                     </a>
                                 </div>
+
                                 <div class="card-body">
                                     <h4 class="card-title"><a href="#">Book One</a></h4>
                                     <ul class="list-inline book-meta">
@@ -148,8 +153,10 @@
                                             <a href="#"><i class="fa fa-calendar"></i>1967</a>
                                         </li>
                                     </ul>
+
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Explicabo, aliquam!</p>
+
                                     <div class="product-ratings">
                                         <ul class="list-inline">
                                             <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
@@ -164,6 +171,7 @@
                         </div>
 
                     </div>
+
                     <div class="col-sm-12 col-lg-4">
                         <!-- Book card -->
                         <div class="product-item bg-light">
@@ -171,9 +179,10 @@
                                 <div class="thumb-content">
                                     <a href="#">
                                         <asset:image src="books/book-1.jpg" width="170px"
-                                             alt="Card image cap"/>
+                                                     alt="Card image cap"/>
                                     </a>
                                 </div>
+
                                 <div class="card-body">
                                     <h4 class="card-title"><a href="#">Book Two</a></h4>
                                     <ul class="list-inline book-meta">
@@ -184,8 +193,10 @@
                                             <a href="#"><i class="fa fa-calendar"></i>2002</a>
                                         </li>
                                     </ul>
+
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Explicabo, aliquam!</p>
+
                                     <div class="product-ratings">
                                         <ul class="list-inline">
                                             <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
@@ -199,6 +210,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-sm-12 col-lg-4">
                         <!-- Book card -->
                         <div class="product-item bg-light">
@@ -206,9 +218,10 @@
                                 <div class="thumb-content">
                                     <a href="#">
                                         <asset:image src="books/book-1.jpg" width="170px"
-                                             alt="Card image cap"/>
+                                                     alt="Card image cap"/>
                                     </a>
                                 </div>
+
                                 <div class="card-body">
                                     <h4 class="card-title"><a href="#">Book Three</a></h4>
                                     <ul class="list-inline book-meta">
@@ -219,8 +232,10 @@
                                             <a href="#"><i class="fa fa-calendar"></i>2008</a>
                                         </li>
                                     </ul>
+
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Explicabo, aliquam!</p>
+
                                     <div class="product-ratings">
                                         <ul class="list-inline">
                                             <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
@@ -234,6 +249,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-sm-12 col-lg-4">
                         <!-- Book card -->
                         <div class="product-item bg-light">
@@ -241,21 +257,24 @@
                                 <div class="thumb-content">
                                     <a href="#">
                                         <asset:image src="books/book-1.jpg" width="170px"
-                                             alt="Card image cap"/>
+                                                     alt="Card image cap"/>
                                     </a>
                                 </div>
+
                                 <div class="card-body">
                                     <h4 class="card-title"><a href="#">Book Four</a></h4>
                                     <ul class="list-inline book-meta">
                                         <li class="list-inline-item">
                                             <a href="#"><i class="fa fa-folder-open-o"></i>Biography</a>
                                         </li>
-                                        <div class="list-inline-item">
+                                        <li class="list-inline-item">
                                             <a href="#"><i class="fa fa-calendar"></i>1989</a>
                                         </li>
                                     </ul>
+
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                     Explicabo, aliquam!</p>
+
                                     <div class="product-ratings">
                                         <ul class="list-inline">
                                             <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
@@ -286,6 +305,7 @@
                     <p>CIS 641 System Analysis and Design</p>
                 </div>
             </div>
+
             <div class="col-lg-6">
                 <!-- Team's Name -->
                 <div class="footerInfo text-center text-lg-right">
@@ -301,8 +321,6 @@
     </div>
 
 </footer>
-
-
 
 </body>
 
