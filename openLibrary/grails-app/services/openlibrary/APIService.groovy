@@ -1,5 +1,6 @@
 package openlibrary
 
+import com.BookWrapper
 import grails.converters.JSON
 import grails.gorm.transactions.Transactional
 import org.grails.web.json.JSONElement
@@ -51,4 +52,14 @@ class APIService {
         return 'search.json?q=' + queryString + '&mode=ebooks&page=1'
     }
 
+    def getFormattedData(JSON apiResult){
+        def returnData
+        def rawData = apiResult as String
+        def newJSON = JSON.parse(rawData)
+        def bookData = newJSON?.docs
+        if (bookData){
+            returnData = new BookWrapper().build(bookData)
+        }
+        return returnData
+    }
 }

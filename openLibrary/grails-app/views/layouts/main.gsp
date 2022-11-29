@@ -1,70 +1,65 @@
-<!doctype html>
-<html lang="en" class="no-js">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>
-        <g:layoutTitle default="Grails"/>
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <asset:link rel="icon" href="favicon.ico" type="image/x-ico"/>
 
-    <asset:stylesheet src="application.css"/>
+    <!-- ** Basic Page Needs ** -->
+    <meta charset="utf-8"/>
+    <title>Open Library Search Engine</title>
 
-    <g:layoutHead/>
+    <!-- favicon -->
+    <asset:link href="tab-icon.png" rel="shortcut icon" type="image/x-icon"/>
+
+    <!--Style sheets-->
+    <asset:stylesheet src="bootstrap.min.css"/>
+
+    <asset:stylesheet src="bootstrap-slider.css"/>
+    <asset:stylesheet src="font-awesome.min.css"/>
+    <asset:stylesheet src="slick.css"/>
+    <asset:stylesheet src="slick-theme.css"/>
+    <asset:stylesheet src="nice-select.css"/>
+
+    <!--Custom stylesheet-->
+    <asset:stylesheet src="style.css"/>
+
+    <!-- Essential Scripts -->
+    <asset:javascript src="jquery-3.3.1.min.js"/>
+    <asset:javascript src="popper.min.js"/>
+    <asset:javascript src="bootstrap.min.js"/>
+    <asset:javascript src="bootstrap-slider.js"/>
+    <asset:javascript src="tether.min.js"/>
+    <asset:javascript src="jquery.raty-fa.js"/>
+    <asset:javascript src="slick.min.js"/>
+    <asset:javascript src="jquery.nice-select.min.js"/>
+
+    <asset:javascript src="script.js"/>
+
 </head>
 
-<body>
+<body class="body-wrapper">
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-static-top" role="navigation">
-    <a class="navbar-brand" href="/#"><asset:image src="grails.svg" alt="Grails Logo"/></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<!-- Header -->
+<header>
 
-    <div class="collapse navbar-collapse" aria-expanded="false" style="height: 0.8px;" id="navbarContent">
-        <ul class="nav navbar-nav ml-auto">
-            <g:pageProperty name="page.nav"/>
-        </ul>
+    <div class="container" style="max-width: 100%">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light navigation" style="height: 55px">
+                    <a class="navbar-brand" href="/">
+                        <asset:image src="openLibrary-logo.png" width="170px" alt="page-logo"/>
+                    </a>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto mt-10">
+                            <li class="nav-item">
+                                <a class="nav-link login-button" href="/logIn">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white add-button" href="/signup">Sign up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </div>
-
-</nav>
-
-<g:layoutBody/>
-
-<div class="footer row" role="contentinfo">
-    <div class="col">
-        <a href="http://guides.grails.org" target="_blank">
-            <asset:image src="advancedgrails.svg" alt="Grails Guides" class="float-left"/>
-        </a>
-        <strong class="centered"><a href="http://guides.grails.org" target="_blank">Grails Guides</a></strong>
-        <p>Building your first Grails app? Looking to add security, or create a Single-Page-App? Check out the <a href="http://guides.grails.org" target="_blank">Grails Guides</a> for step-by-step tutorials.</p>
-
-    </div>
-    <div class="col">
-        <a href="http://docs.grails.org" target="_blank">
-            <asset:image src="documentation.svg" alt="Grails Documentation" class="float-left"/>
-        </a>
-        <strong class="centered"><a href="http://docs.grails.org" target="_blank">Documentation</a></strong>
-        <p>Ready to dig in? You can find in-depth documentation for all the features of Grails in the <a href="http://docs.grails.org" target="_blank">User Guide</a>.</p>
-
-    </div>
-
-    <div class="col">
-        <a href="https://grails-slack.cfapps.io" target="_blank">
-            <asset:image src="slack.svg" alt="Grails Slack" class="float-left"/>
-        </a>
-        <strong class="centered"><a href="https://grails-slack.cfapps.io" target="_blank">Join the Community</a></strong>
-        <p>Get feedback and share your experience with other Grails developers in the community <a href="https://grails-slack.cfapps.io" target="_blank">Slack channel</a>.</p>
-    </div>
-</div>
-
-
-<div id="spinner" class="spinner" style="display:none;">
-    <g:message code="spinner.alt" default="Loading&hellip;"/>
-</div>
-
-<asset:javascript src="application.js"/>
+</header>
 
 </body>
-</html>

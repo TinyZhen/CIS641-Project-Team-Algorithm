@@ -21,7 +21,7 @@
     <asset:stylesheet src="bootstrap.min.css"/>
 
     <asset:stylesheet src="bootstrap-slider.css"/>
-    <asset:stylesheet src="font-awesome.min.css"/>
+    <asset:stylesheet src="font-awesome/css/font-awesome.min.css"/>
     <asset:stylesheet src="slick.css"/>
     <asset:stylesheet src="slick-theme.css"/>
     <asset:stylesheet src="nice-select.css"/>
