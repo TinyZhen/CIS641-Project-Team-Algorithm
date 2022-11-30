@@ -114,15 +114,13 @@
     <!-- Container End -->
 </section>
 
-<!-- Trending Books --->
+<!-- Notice Board --->
 <section class="popular-deals section bg-gray">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title">
-                    <h2>Trending Book of the Month!</h2>
-
-                    <p>Select and add it to your library for free!</p>
+                    <h2>Open Library Notice Board</h2>
                 </div>
             </div>
         </div>

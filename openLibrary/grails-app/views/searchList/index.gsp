@@ -118,12 +118,15 @@
                                                     <span class="font-weight-bold">${book?.bookTitle}</span>
                                                 </div>
                                                 <ul class="list-inline mt-2 mb-3">
+                                                    %{--TODO change the type of the authorName--}%
+                                                    <li class="list-inline-item"><i
+                                                            class="fa fa-user"></i>&nbsp;&nbsp; ${book?.authorName?.replace("[","").replace("]","").replace('"','')}</li>
+                                                    <li class="list-inline-item"><i
+                                                            class="fa fa-calendar"></i>&nbsp;&nbsp; ${book?.publishedDate}</li>
                                                     <li class="list-inline-item"><i
                                                             class="fa fa-folder-open-o"></i>
                                                         &nbsp;${book?.category}
                                                     </li>
-                                                    <li class="list-inline-item"><i
-                                                            class="fa fa-calendar"></i>&nbsp;&nbsp; ${book?.publishedDate}</li>
                                                 </ul>
 
                                                 <p class="pr-5">${book.firstSentence}</p>
