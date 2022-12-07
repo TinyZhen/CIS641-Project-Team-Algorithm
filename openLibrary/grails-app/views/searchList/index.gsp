@@ -132,10 +132,12 @@
                                                 <p class="pr-5">${book.firstSentence}</p>
                                             </div>
                                         </div>
-
+                                        <form id="bookdetails" action="${createLink(controller: 'searchList', action: 'result', params: [id: book?.bookId])} $"
+                                              method="GET" autocomplete="off">
                                         <div class="col-lg-4 align-self-center">
                                             <button type="submit" class="btn btn-primary">Book Details</button>
                                         </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

@@ -40,7 +40,7 @@ class BookWrapper {
         rawData?.eachWithIndex { it, i ->
             if (limit < 10 && it?.first_sentence || it?.cover_i) {
                 def isbn = it?.isbn
-                def bookId = it?.key
+                def bookId = it?.key?.toString()
                 def bookTitle = it?.title
                 def publishedYear = it?.publish_year ? Integer.parseInt(it?.publish_year?.getAt(0)?.toString()) : 0
                 def publisher = it?.publish_year ?: 'Not Found'

@@ -15,5 +15,8 @@ class SearchListController {
 
         render view: 'index', model: [bookData: resultData, searchedKey: params?.searchKey]
     }
-
+    def result(){
+        println "{params?.id} ========= ${params?.id}"
+        render view:'/searchList/result.gsp'
+    }
 }

@@ -149,7 +149,7 @@
                                 <div class="book-review">
                                     <div class="media">
                                         <!-- Avater -->
-                                        <asset:image src="user/userPhoto-1.png" alt="avater"/>
+                                        <asset:image src="userPhoto-1.png" alt="avater"/>
                                         <div class="media-body">
                                             <!-- Ratings -->
                                             <div class="ratings">
@@ -212,7 +212,7 @@
                 <div class="sidebar">
                     <!-- Book Cover -->
                     <div class="widget user text-center">
-                        <asset:image src="books/book2.png" width="170px" alt=""/>
+                        <asset:image src="book2.PNG" width="170px" alt=""/>
                         <button class="btn btn-transparent userActions" style="margin-left: 17px!important;">Preview book</button>
                         <button class="btn btn-transparent userActions">Add to my list</button>
                     </div>
@@ -222,7 +222,7 @@
                     <!-- Author Profile widget -->
                     <div class="widget user text-center" style="padding-top: 10px">
                         <h3 style="padding: 8px">About the Author</h3>
-                        <asset:image src="books/author1.PNG" width="170px" alt=""/>
+                        <asset:image src="author1.PNG" width="170px" alt=""/>
                         <h4><a href="user-profile.html">Jane Austen</a></h4>
                         <a href="single.html">See other books of the author</a>
                     </div>
