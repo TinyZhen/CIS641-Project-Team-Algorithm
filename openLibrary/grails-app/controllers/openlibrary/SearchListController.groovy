@@ -16,7 +16,13 @@ class SearchListController {
         render view: 'index', model: [bookData: resultData, searchedKey: params?.searchKey]
     }
     def result(){
-        println "{params?.id} ========= ${params?.id}"
-        render view:'/searchList/result.gsp'
+        def resultData
+        def sub = params?.bookId.substring(1)
+        sub = sub +".json"
+        if(params?.bookId){
+            def rawSearchedData = APIService.getResponseFromAPI(sub, 'GET')
+            resultData = APIService.getFormattedBookData(rawSearchedData)
+        }
+        render view:'result', model: [bookData: resultData]
     }
 }

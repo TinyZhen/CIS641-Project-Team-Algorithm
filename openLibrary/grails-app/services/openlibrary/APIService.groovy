@@ -62,4 +62,17 @@ class APIService {
         }
         return returnData
     }
+
+    def getFormattedBookData(JSON apiResult){
+        def returnData
+        def rawData = apiResult as String
+        def newJSON = JSON.parse(rawData)
+        if (newJSON){
+            def isbn = newJSON?.isbn ?: null
+            def bookId = newJSON?.key
+
+            returnData = new BookWrapper()
+        }
+        return returnData
+    }
 }

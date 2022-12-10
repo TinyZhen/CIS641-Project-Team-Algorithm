@@ -106,7 +106,7 @@
             <!-- Left sidebar -->
             <div class="col-lg-8">
                 <div class="book-details">
-                    <h1 class="book-title">Pride and Prejudice</h1>
+                    <h1 class="book-title">${bookData?.}</h1>
                     <div class="book-meta">
                         <ul class="list-inline">
                             <li class="list-inline-item"><i class="fa fa-user-o"></i> Author <a
