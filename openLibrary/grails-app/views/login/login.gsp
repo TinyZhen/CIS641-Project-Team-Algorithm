@@ -66,19 +66,15 @@
             <div class="col-lg-5 col-md-8 align-item-center">
                 <div class="border">
                     <h3 class="bg-gray p-4" style="text-align: center">Login to your account</h3>
-                    <form action="#">
+                    <form action="${createLink(controller: 'login', action: 'authenticate')}" method="POST">
                         <fieldset class="p-4">
-                            <input class="form-control mb-3" type="text" placeholder="Username" required>
-                            <input class="form-control mb-3" type="password" placeholder="Password" required>
-                            <div class="loggedin-forgot">
-                                <input type="checkbox" id="keep-me-logged-in">
-                                <label for="keep-me-logged-in" class="pt-3 pb-2">Keep me logged in</label>
-                            </div>
+                            <input class="form-control mb-3" type="text" placeholder="Username" name="username" required>
+                            <input class="form-control mb-3" type="password" placeholder="Password" name="password" required>
                             <button type="submit" class="btn btn-primary font-weight-bold mt-3"
                                     style="padding: 8px 20px;float: right">Log in
                             </button>
                             <a class="mt-3 d-block text-primary" style="clear: right" href="#">Forget Password?</a>
-                            <p class="mt-3 d-block">Don't have an account? <a class="text-primary" href="/signUp">Sign up here</a></p>
+                            <p class="mt-3 d-block">Don't have an account? <a class="text-primary" href="${createLink(controller: 'login', action: 'signUp')}">Sign up here</a></p>
                         </fieldset>
                     </form>
                 </div>
@@ -108,9 +104,7 @@
     </div>
     <!-- Container End -->
     <!-- To Top -->
-    <div class="scroll-top-to">
-        <i class="fa fa-angle-up"></i>
-    </div>
+
 </footer>
 
 

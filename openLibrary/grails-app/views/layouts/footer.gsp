@@ -18,10 +18,5 @@
             </div>
         </div>
     </div>
-    <!-- Container End -->
-    <!-- To Top -->
-    <div class="scroll-top-to">
-        <i class="fa fa-angle-up"></i>
-    </div>
 
 </footer>

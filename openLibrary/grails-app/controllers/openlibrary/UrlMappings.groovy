@@ -11,9 +11,6 @@ class UrlMappings {
 
         "/"(controller: 'homePage' , action: 'index')
         "/searchList"(controller: 'SearchList', action: 'index')
-//        "/searchList/result"(controller: 'SearchList',action: 'result')
-        "/login"(controller: 'login',action: 'index')
-        "/signup"(controller: 'signUp',action: 'index')
         "500"(view:'/error')
         "404"(view:'/notFound')
     }

@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 
-<!--
- // WEBSITE: https://themefisher.com
- // TWITTER: https://twitter.com/themefisher
- // FACEBOOK: https://www.facebook.com/themefisher
- // GITHUB: https://github.com/themefisher/
--->
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html lang="en">
 <head>
@@ -26,24 +20,23 @@
     <asset:stylesheet src="nice-select.css"/>
 
     <!--Custom stylesheet-->
-    <asset:stylesheet src="style.css" />
+    <asset:stylesheet src="style.css"/>
 
     <!-- Essential Scripts -->
-    <asset:javascript  src="jquery-3.3.1.min.js"/>
-    <asset:javascript  src="popper.min.js"/>
-    <asset:javascript  src="bootstrap.min.js"/>
-    <asset:javascript  src="bootstrap-slider.js"/>
-    <asset:javascript  src="tether.min.js"/>
-    <asset:javascript  src="jquery.raty-fa.js"/>
-    <asset:javascript  src="slick.min.js"/>
-    <asset:javascript  src="jquery.nice-select.min.js"/>
+    <asset:javascript src="jquery-3.3.1.min.js"/>
+    <asset:javascript src="popper.min.js"/>
+    <asset:javascript src="bootstrap.min.js"/>
+    <asset:javascript src="bootstrap-slider.js"/>
+    <asset:javascript src="tether.min.js"/>
+    <asset:javascript src="jquery.raty-fa.js"/>
+    <asset:javascript src="slick.min.js"/>
+    <asset:javascript src="jquery.nice-select.min.js"/>
 
-    <asset:javascript  src="script.js"/>
+    <asset:javascript src="script.js"/>
 
 </head>
 
 <body class="body-wrapper">
-
 
 <header>
     <div class="container" style="max-width: 100%">
@@ -67,15 +60,30 @@
             <div class="col-lg-5 col-md-8 align-item-center">
                 <div class="border">
                     <h3 class="bg-gray p-4" style="text-align: center">Sign up an account</h3>
-                    <form action="#">
+
+                    <g:if test="${message != ''}">
+                        <g:if test="${responseCode == 400 || responseCode == 500}">
+                            <p class="mt-3 d-block text-primary" style="text-align: center; color: red !important;" >${message}</p>
+                        </g:if>
+                        <g:else>
+                            <p class="mt-3 d-block text-primary" style="text-align: center; color: green !important" >${message}</p>
+                        </g:else>
+                    </g:if>
+
+                    <form action="${createLink(controller: 'login', action: 'createNewUser')}" method="POST">
                         <fieldset class="p-4">
-                            <input class="form-control mb-3" type="text" placeholder="Username" required>
-                            <input class="form-control mb-3" type="password" placeholder="Password" required>
+                            <input class="form-control mb-3" type="text" placeholder="Username" name="username"
+                                   required>
+                            <input class="form-control mb-3" type="password" placeholder="Password" name="password"
+                                   required>
 
                             <button type="submit" class="btn btn-primary font-weight-bold mt-3"
                                     style="padding: 8px 20px;float: right">Sign up
                             </button>
-                            <p class="mt-3 d-block">Already have an account? <a class="text-primary" href="/logIn">Login</a></p>
+
+                            <p class="mt-3 d-block">Already have an account? <a class="text-primary"
+                                                                                href="${createLink(controller: 'login', action: 'index')}">Login</a>
+                            </p>
                         </fieldset>
                     </form>
                 </div>
@@ -95,6 +103,7 @@
                     <p>CIS 641 System Analysis and Design</p>
                 </div>
             </div>
+
             <div class="col-lg-6">
                 <!-- Team's Name -->
                 <div class="footerInfo text-center text-lg-right">
@@ -105,11 +114,8 @@
     </div>
     <!-- Container End -->
     <!-- To Top -->
-    <div class="scroll-top-to">
-        <i class="fa fa-angle-up"></i>
-    </div>
-</footer>
 
+</footer>
 
 </body>
 

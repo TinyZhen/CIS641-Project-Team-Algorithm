@@ -16,6 +16,8 @@ class APIService {
      * @param requestMethod - the method GET or POST
      * @return JSON value
      */
+    
+    def BookService
 
     def getResponseFromAPI(String query, String requestMethod) {
         try {
@@ -52,27 +54,20 @@ class APIService {
         return 'search.json?q=' + queryString + '&mode=ebooks&page=1'
     }
 
-    def getFormattedData(JSON apiResult){
-        def returnData
-        def rawData = apiResult as String
-        def newJSON = JSON.parse(rawData)
-        def bookData = newJSON?.docs
-        if (bookData){
-            returnData = new BookWrapper().build(bookData)
-        }
-        return returnData
+    def getQueryForBook(String isbn){
+        return 'api/books?bibkeys=ISBN:'+isbn+'&format=json'
     }
 
-    def getFormattedBookData(JSON apiResult){
-        def returnData
-        def rawData = apiResult as String
-        def newJSON = JSON.parse(rawData)
-        if (newJSON){
-            def isbn = newJSON?.isbn ?: null
-            def bookId = newJSON?.key
+    def getAuthorNameFromAPI(authorKey) {
+        def newAuthorkey = authorKey?.toString()+ '.json'
+        def apiResponse = getResponseFromAPI(newAuthorkey, 'GET')
 
-            returnData = new BookWrapper()
+        if (apiResponse) {
+            def parsedResponse = JSON.parse(apiResponse as String)
+            return parsedResponse?.personal_name
         }
-        return returnData
+
+        return 'None'
     }
+
 }

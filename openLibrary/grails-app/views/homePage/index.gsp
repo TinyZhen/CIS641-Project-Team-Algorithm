@@ -58,10 +58,10 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto mt-10">
                             <li class="nav-item">
-                                <a class="nav-link login-button" href="/logIn">Login</a>
+                                <a class="nav-link login-button" href="${createLink(controller: 'login', action: 'index')}">Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white add-button" href="/signup">Sign up</a>
+                                <a class="nav-link text-white add-button" href="${createLink(controller: 'login', action: 'signUp')}">Sign up</a>
                             </li>
                         </ul>
                     </div>
@@ -314,9 +314,7 @@
     </div>
     <!-- Container End -->
     <!-- To Top -->
-    <div class="scroll-top-to">
-        <i class="fa fa-angle-up"></i>
-    </div>
+
 
 </footer>
 

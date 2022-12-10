@@ -3,26 +3,28 @@ package openlibrary
 class SearchListController {
 
     def APIService
+    def BookService
 
     def index() {
         def resultData
         if (params?.searchKey) {
             def queryParam = APIService.getQueryParameter(params?.searchKey?.toString())
-            //TODO: Need to change this request method hardcoded value
             def rawSearchedData = APIService.getResponseFromAPI(queryParam, 'GET')
-            resultData = APIService.getFormattedData(rawSearchedData)
+            resultData = BookService.getFormattedData(rawSearchedData)
         }
 
         render view: 'index', model: [bookData: resultData, searchedKey: params?.searchKey]
     }
-    def result(){
+
+    def result() {
         def resultData
-        def sub = params?.bookId.substring(1)
-        sub = sub +".json"
-        if(params?.bookId){
+        def sub = params?.bookId + ".json"
+        if (params?.bookId) {
             def rawSearchedData = APIService.getResponseFromAPI(sub, 'GET')
-            resultData = APIService.getFormattedBookData(rawSearchedData)
+            def query = APIService.getQueryForBook(params?.isbn?.toString())
+            def additionalInformation = APIService.getResponseFromAPI(query, 'GET')
+            resultData = BookService.getFormattedBookData(rawSearchedData, additionalInformation)
         }
-        render view:'result', model: [bookData: resultData]
+        render view: 'result', model: [bookData: resultData]
     }
 }
