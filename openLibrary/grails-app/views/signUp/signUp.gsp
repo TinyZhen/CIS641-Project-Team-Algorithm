@@ -70,7 +70,7 @@
                         </g:else>
                     </g:if>
 
-                    <form action="${createLink(controller: 'login', action: 'createNewUser')}" method="POST">
+                    <form action="${createLink(controller: 'user', action: 'createNewUser')}" method="POST">
                         <fieldset class="p-4">
                             <input class="form-control mb-3" type="text" placeholder="Username" name="username"
                                    required>

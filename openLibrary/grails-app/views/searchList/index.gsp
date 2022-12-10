@@ -132,7 +132,7 @@
                                                 <p class="pr-5">${book.firstSentence}</p>
                                             </div>
                                         </div>
-                                        <form id="bookdetails" action="${createLink(controller: 'searchList', action: 'result', params: [bookId: book?.bookId])}"
+                                        <form id="bookdetails" action="${createLink(controller: 'searchList', action: 'result', params: [bookId: book?.bookId, isbn:book?.isbn])}"
                                               method="POST" autocomplete="off">
                                         <div class="col-lg-4 align-self-center">
                                             <button type="submit" class="btn btn-primary">Book Details</button>

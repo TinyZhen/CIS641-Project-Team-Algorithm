@@ -15,7 +15,7 @@ class BookWrapper {
     String authorKey
     String category //TODO change to
     String firstSentence
-    int editionCount
+    String editionCount
     String bookCover
     List review
 

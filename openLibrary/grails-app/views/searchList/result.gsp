@@ -201,7 +201,7 @@
                             <img src="https://covers.openlibrary.org/b/id/${bookData?.bookCover}.jpg"
                                  alt="" width="170px">
                         </div>
-                        <a href="${createLink(controller: 'user', action: 'addBookToList', params: [bookId: bookData?.bookId, userId: session?.user?.id])}">
+                        <a href="${createLink(controller: 'user', action: 'addBookToList', params: [bookId: bookData?.bookId, userId: session?.user?.id, isbn: bookData?.isbn])}">
                             <button class="btn btn-transparent userActions">Add to my list</button>
                         </a>
 
