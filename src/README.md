@@ -16,7 +16,10 @@ The project is a web tool that intends to help students who have difficulty find
 # Run Instructions
 <ol>
 <li>Install the requirements</li>
+<li>Set java, grails and gradle in your local setup's environment variable</li>
 <li>Install required dependencies (this usually happens automatically if you are using Netbeans, vscode or intellij)</li>
+<li>Create a database called 'openLibary'</li>
+<li>Set your own db username and password in application.yml >> dataSource >> username and password </li>
 <li>use "grails run-app" command to the run the application locally from terminal else click run on the code editor</li>
 <li> Application will run on terminal and you should be able to access the local application in your localhost:8080 port</li>
 </ol>
