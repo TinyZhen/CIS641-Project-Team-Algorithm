@@ -76,8 +76,15 @@ class BookService {
         }
     }
 
-    def removeReview(){
-
+    def removeReview(reviewId){
+        try{
+            def review = Review.findById(reviewId)
+            review.delete(flush: true, failOnError: true)
+            return 200
+        }catch (Exception ex){
+            ex.printStackTrace()
+            return 500
+        }
     }
 
     def removeBook(bookId, userId){

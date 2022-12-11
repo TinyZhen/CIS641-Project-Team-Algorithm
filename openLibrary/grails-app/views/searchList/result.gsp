@@ -134,6 +134,11 @@
                             <div class="tab-pane fade" id="pills-review" role="tabpanel"
                                  aria-labelledby="pills-review-tab">
                                 <h3 class="tab-title">Book Review</h3>
+
+                                <g:if test="${message}">
+                                    <p style="color: red">${message}</p>
+                                </g:if>
+
                                 <g:if test="${bookData?.review?.size() == 0}">
                                     <h5 style="text-align: center;color: green;">No review available!</h5>
                                 </g:if>
@@ -144,16 +149,6 @@
                                                 <!-- Avatar -->
                                                 <asset:image src="review.png" alt="review"/>
                                                 <div class="media-body">
-                                                    %{--                                                    <!-- Ratings -->--}%
-                                                    %{--                                                    <div class="ratings">--}%
-                                                    %{--                                                        <ul class="list-inline">--}%
-                                                    %{--                                                            <g:each in="${1..bookData?.review?.star}">--}%
-                                                    %{--                                                                <li class="list-inline-item">--}%
-                                                    %{--                                                                    <i class="fa fa-star"></i>--}%
-                                                    %{--                                                                </li>--}%
-                                                    %{--                                                            </g:each>--}%
-                                                    %{--                                                        </ul>--}%
-                                                    %{--                                                    </div>--}%
 
                                                     <div class="name">
                                                         <h5>${com.openLibrary.User.findById(review?.userId)?.username}</h5>
@@ -168,34 +163,46 @@
                                                             ${review?.description}
                                                         </p>
                                                     </div>
+
+                                                    <g:if test="${review?.userId?.toString()?.toLong() == session?.user?.id?.toString()?.toLong()}">
+                                                        <div class="delete" style="float:right">
+                                                            <a href="${createLink(controller: 'searchList', action: 'removeReview', params: ['reviewId': review?.id, bookId: bookData?.bookId, isbn: bookData?.isbn])}">
+                                                                <p>Delete Review</p>
+                                                            </a>
+                                                        </div>
+                                                    </g:if>
+
                                                 </div>
                                             </div>
                                         </div>
                                     </g:each>
                                 </g:else>
-                                <div class="review-submission">
-                                    <h3 class="tab-title">Submit your review</h3>
 
-                                    <div class="review-submit">
-                                        <form action="${createLink(controller: 'user', action: 'saveReview')}"
-                                              method="POST" class="row">
-                                            <div class="col-12 mb-3">
-                                                <textarea name="review" id="review" rows="3" class="form-control"
-                                                          placeholder="Write your review here!" required></textarea>
-                                            </div>
-                                            <input type="text" style="display: none" name="bookId"
-                                                   value="${bookData?.bookId}"/>
-                                            <input type="text" style="display: none" name="userId"
-                                                   value="${session?.user?.id}"/>
-                                            <input type="text" style="display: none" name="isbn"
-                                                   value="${bookData?.isbn}"/>
+                                <g:if test="${session?.user}">
+                                    <div class="review-submission">
+                                        <h3 class="tab-title">Submit your review</h3>
 
-                                            <div class="col-12">
-                                                <button type="submit" class="btn btn-main">Sumbit</button>
-                                            </div>
-                                        </form>
+                                        <div class="review-submit">
+                                            <form action="${createLink(controller: 'user', action: 'saveReview')}"
+                                                  method="POST" class="row">
+                                                <div class="col-12 mb-3">
+                                                    <textarea name="review" id="review" rows="3" class="form-control"
+                                                              placeholder="Write your review here!" required></textarea>
+                                                </div>
+                                                <input type="text" style="display: none" name="bookId"
+                                                       value="${bookData?.bookId}"/>
+                                                <input type="text" style="display: none" name="userId"
+                                                       value="${session?.user?.id}"/>
+                                                <input type="text" style="display: none" name="isbn"
+                                                       value="${bookData?.isbn}"/>
+
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn-main">Sumbit</button>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
-                                </div>
+                                </g:if>
 
                             </div>
 

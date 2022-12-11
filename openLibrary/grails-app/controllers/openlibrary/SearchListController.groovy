@@ -25,6 +25,15 @@ class SearchListController {
             def additionalInformation = APIService.getResponseFromAPI(query, 'GET')
             resultData = BookService.getFormattedBookData(rawSearchedData, additionalInformation)
         }
-        render view: 'result', model: [bookData: resultData]
+        render view: 'result', model: [bookData: resultData, message: params?.message]
+    }
+
+    def removeReview() {
+        def responseCode = BookService.removeReview(params?.reviewId?.toString()?.toLong())
+        if (responseCode == 200) {
+            redirect(controller: "searchList", action: "result", params: [bookId: params?.bookId, isbn: params?.isbn?.toString()])
+        } else {
+            redirect(controller: "searchList", action: "result", params: [bookId: params?.bookId, isbn: params?.isbn?.toString(), message: 'Unable to delete comment!'])
+        }
     }
 }
