@@ -3,6 +3,7 @@ package openlibrary
 import com.BookWrapper
 import com.openLibrary.Review
 import grails.converters.JSON
+import com.openLibrary.UserBookList
 import grails.gorm.transactions.Transactional
 
 import java.text.SimpleDateFormat
@@ -73,5 +74,21 @@ class BookService {
             e.printStackTrace()
             return 500
         }
+    }
+
+    def removeReview(){
+
+    }
+
+    def removeBook(bookId, userId){
+       try{
+           def book = UserBookList.findByBookIdAndUserId(bookId?.toString(), userId?.toString()?.toLong())
+           book.delete(flush: true, failOnError: true)
+           return 200
+       }catch (Exception ex){
+           ex.printStackTrace()
+           return 500
+       }
+
     }
 }

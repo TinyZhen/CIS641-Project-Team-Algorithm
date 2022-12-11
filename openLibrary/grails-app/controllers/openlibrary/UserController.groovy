@@ -13,7 +13,7 @@ class UserController {
     def userProfile() {
         def user = User.findById(params?.userId?.toString()?.toLong())
         def userBookList = userService.getUserBook(user?.id)
-        render(view: 'userProfile', model: [user: user, userBookList: userBookList])
+        render(view: 'userProfile', model: [user: user, userBookList: userBookList, message: params?.message])
     }
 
     def saveReview() {
@@ -70,5 +70,14 @@ class UserController {
             render(view: '/signUp/signUp', model: [message: message, responseCode: responseCode])
         }
 
+    }
+
+    def removeBook(){
+        def responseCode = bookService.removeBook(params?.bookId, session?.user?.id)
+        if (responseCode == 200){
+            redirect(controller: "user", action: "userProfile", params: [userId: session?.user?.id])
+        }else{
+            redirect(controller: "user", action: "userProfile", params: [userId: session?.user?.id, message: 'Unable to delete!'])
+        }
     }
 }
