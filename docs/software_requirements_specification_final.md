@@ -196,7 +196,7 @@ In this section, we will show the links between all artifacts and requirements.
 
 This section direct the link to the artifacts we made for this project
 
-* [Use Case Diagram](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/UseCaseDiagram/Use_case.pdf)
+* [Use Case Diagram](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/UseCaseDiagram/Usecase.pdf)
 * [Class Diagram](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/ClassDiagram/classDiagram.png)
 * [Activity Diagram](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/Activitydiagram/activity_diagram.png)
 * [Gantt Chart](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/GanttChart/Ganttchart.pdf)
