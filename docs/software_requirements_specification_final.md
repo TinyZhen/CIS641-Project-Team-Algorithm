@@ -8,11 +8,11 @@
 		4. Personal List
 		5. Search Result
 	2. Non-Functional Requirements
-		1. Security Handling
-		2. Web Performance
-		3. Web Compatibility
-		4.
-		5.
+		1. Security
+		2. Performance
+		3. Compatibility
+		4. Reliability
+		5. Usability
 3. [Change Management Plan](#change-management-plan)
 4. [Traceability Links](#traceability-links)
 	1. Use Case Diagram Traceability
@@ -157,15 +157,33 @@ In this section, we will show the links between all artifacts and requirements.
 
 | Artifact ID  | Artifact Name | Requirement ID | 
 | :-------------: | :----------: | :----------: | 
-| UseCase1 | Move Player | FR5 | 
-| … | … | … |   
+| UseCase1 | Sign in the account | FR1,NFR1 | 
+| UseCase2 | Create an account | FR2,FR3,FR5 |   
+| UseCase3 | Log out | FR4 | 
+| UseCase4 | Store user information | TBD | 
+| UseCase5 | Search by keywords | FR6,FR7,FR10 | 
+| UseCase6 | Return the list | FR11 | 
+| UseCase7 | Display the list of books | FR11,FR12,FR13,FR14,FR15,FR16,FR17 | 
+| UseCase8 | Pick the result | FR23 | 
+| UseCase9 | Display the book details | FR24,FR25 | 
+| UseCase10 | Return the book details | TBD | 
+| UseCase11 | Preview the book | FR27 | 
+| UseCase12 | Display user reviews | FR26 | 
+| UseCase13 | Change preview settings | FR28,FR29 | 
+| UseCase14 | Create a list | FR18 | 
+| UseCase15 | Save a list | TBD | 
+| UseCase16 | Write a review | FR22,FR19 | 
+| UseCase17 | Delete a review | FR20 | 
 
 ## Class Diagram Traceability  
 
 | Artifact Name | Requirement ID | 
 | :-------------: |:----------: | 
-| classPlayer | NFR3, FR5 | 
-| … | … | … |   
+| User |  | 
+| UserBookList |  |   
+| BookWrapper |   |  
+| Review |   |  
+| API |   |  
 
 ## Activity Diagram Traceability  
 
