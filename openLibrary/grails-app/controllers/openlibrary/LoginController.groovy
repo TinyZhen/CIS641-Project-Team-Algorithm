@@ -6,7 +6,7 @@ import com.openLibrary.User
 class LoginController {
 
     def index() {
-        render(view: '/login/login')
+        render(view: '/login/login', model: [message: ''])
     }
 
     def authenticate() {
@@ -15,8 +15,7 @@ class LoginController {
             session.user = user
             redirect(controller: "homePage", action: "index")
         } else {
-            //TODO work in this
-            return 404
+            render(view: '/login/login', model: [message: 'User not found!'])
         }
     }
 

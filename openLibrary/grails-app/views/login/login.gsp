@@ -26,24 +26,23 @@
     <asset:stylesheet src="nice-select.css"/>
 
     <!--Custom stylesheet-->
-    <asset:stylesheet src="style.css" />
+    <asset:stylesheet src="style.css"/>
 
     <!-- Essential Scripts -->
-    <asset:javascript  src="jquery-3.3.1.min.js"/>
-    <asset:javascript  src="popper.min.js"/>
-    <asset:javascript  src="bootstrap.min.js"/>
-    <asset:javascript  src="bootstrap-slider.js"/>
-    <asset:javascript  src="tether.min.js"/>
-    <asset:javascript  src="jquery.raty-fa.js"/>
-    <asset:javascript  src="slick.min.js"/>
-    <asset:javascript  src="jquery.nice-select.min.js"/>
+    <asset:javascript src="jquery-3.3.1.min.js"/>
+    <asset:javascript src="popper.min.js"/>
+    <asset:javascript src="bootstrap.min.js"/>
+    <asset:javascript src="bootstrap-slider.js"/>
+    <asset:javascript src="tether.min.js"/>
+    <asset:javascript src="jquery.raty-fa.js"/>
+    <asset:javascript src="slick.min.js"/>
+    <asset:javascript src="jquery.nice-select.min.js"/>
 
-    <asset:javascript  src="script.js"/>
+    <asset:javascript src="script.js"/>
 
 </head>
 
 <body class="body-wrapper">
-
 
 <header>
     <div class="container" style="max-width: 100%">
@@ -66,15 +65,25 @@
             <div class="col-lg-5 col-md-8 align-item-center">
                 <div class="border">
                     <h3 class="bg-gray p-4" style="text-align: center">Login to your account</h3>
+                    <g:if test="${message != ''}">
+                        <p class="mt-3 d-block text-primary"
+                           style="text-align: center; color: red !important;">${message}</p>
+
+                    </g:if>
                     <form action="${createLink(controller: 'login', action: 'authenticate')}" method="POST">
                         <fieldset class="p-4">
-                            <input class="form-control mb-3" type="text" placeholder="Username" name="username" required>
-                            <input class="form-control mb-3" type="password" placeholder="Password" name="password" required>
+                            <input class="form-control mb-3" type="text" placeholder="Username" name="username"
+                                   required>
+                            <input class="form-control mb-3" type="password" placeholder="Password" name="password"
+                                   required>
                             <button type="submit" class="btn btn-primary font-weight-bold mt-3"
                                     style="padding: 8px 20px;float: right">Log in
                             </button>
                             <a class="mt-3 d-block text-primary" style="clear: right" href="#">Forget Password?</a>
-                            <p class="mt-3 d-block">Don't have an account? <a class="text-primary" href="${createLink(controller: 'login', action: 'signUp')}">Sign up here</a></p>
+
+                            <p class="mt-3 d-block">Don't have an account? <a class="text-primary"
+                                                                              href="${createLink(controller: 'login', action: 'signUp')}">Sign up here</a>
+                            </p>
                         </fieldset>
                     </form>
                 </div>
@@ -94,6 +103,7 @@
                     <p>CIS 641 System Analysis and Design</p>
                 </div>
             </div>
+
             <div class="col-lg-6">
                 <!-- Team's Name -->
                 <div class="footerInfo text-center text-lg-right">
@@ -106,7 +116,6 @@
     <!-- To Top -->
 
 </footer>
-
 
 </body>
 
