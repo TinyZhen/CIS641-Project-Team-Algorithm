@@ -50,14 +50,33 @@
                     </a>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto mt-10">
-                            <li class="nav-item">
-                                <a class="nav-link login-button" href="${createLink(controller: 'login', action: 'index')}">Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white add-button" href="${createLink(controller: 'login', action: 'signUp')}">Sign up</a>
-                            </li>
-                        </ul>
+                        <g:if test="${session?.user}">
+                            <ul class="navbar-nav ml-auto mt-10">
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                       href="${createLink(controller: 'user', action: 'userProfile', params: ['userId': session?.user?.id])}">
+                                        <asset:image src="user-icon.png" width="40px" alt="user-logo"/>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <div style="margin: 20px;margin-bottom: 10px !important;">
+                                        <a href="${createLink(controller: 'login', action: 'logout')}">logout</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </g:if>
+                        <g:else>
+                            <ul class="navbar-nav ml-auto mt-10">
+                                <li class="nav-item">
+                                    <a class="nav-link login-button"
+                                       href="${createLink(controller: 'login', action: 'index')}">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white add-button"
+                                       href="${createLink(controller: 'login', action: 'signUp')}">Sign up</a>
+                                </li>
+                            </ul>
+                        </g:else>
                     </div>
                 </nav>
             </div>
