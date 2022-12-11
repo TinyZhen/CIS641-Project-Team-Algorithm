@@ -179,29 +179,27 @@ In this section, we will show the links between all artifacts and requirements.
 
 | Artifact Name | Requirement ID | 
 | :-------------: |:----------: | 
-| User | NF1, | 
-| UserBookList |  |   
-| BookWrapper |   |  
-| Review |   |  
-| API |   |  
+| User | NF1-5 | 
+| UserBookList | FR18 |   
+| BookWrapper | FR11-17  |  
+| Review |  FR23,FR27 |  
+| API | TBD  |  
 
 ## Activity Diagram Traceability  
 
-<In this case, it makes more sense (I think, feel free to disagree) to link to the file and to those requirements impacted>  
-
 | Artifact ID  | Artifact Name | Requirement ID | 
 | :-------------: | :----------: | :----------: | 
-| <activity diagram> | FR1-23, NFR2 | 
+| [activity diagram](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/Activitydiagram/activity_diagram.png) | FR1-23, NFR2 | 
 
 
 # Software Artifacts  
 
 This section direct the link to the artifacts we made for this project
 
-* [Use Case Diagram](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/UseCaseDiagram/Use case .pdf)
+* [Use Case Diagram](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/UseCaseDiagram/Use_case .pdf)
 * [Class Diagram](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/ClassDiagram/classDiagram.png)
 * [Activity Diagram](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/Activitydiagram/activity_diagram.png)
-* [Gantt Chart](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/GanttChart/Team Algorithm - GANTT Chart - Gantt Chart 2022.pdf)
+* [Gantt Chart](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/GanttChart/Team_Algorithm_-_GANTT_Chart_-_Gantt_Chart_2022.pdf)
 * [Search Sequence Dragram](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/SequenceDiagram/search_sequence.png)
 * [bookdetail Sequence Dragram](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/SequenceDiagram/sequence_diagram_bookdetail.png)
 * [Database Table](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/Database%20%20Table)
