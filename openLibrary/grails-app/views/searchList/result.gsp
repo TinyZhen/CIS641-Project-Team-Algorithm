@@ -201,9 +201,15 @@
 
                             <div class="tab-pane fade" id="pills-read" role="tabpanel"
                                  aria-labelledby="pills-review-tab">
-                                <iframe src="${bookData?.previewUrl}?view=theater&wrapper=false"
-                                        title="${bookData?.bookTitle}"
-                                        class="bookPreview"></iframe>
+                                <g:if test="${bookData?.previewState?.equals('noview')}">
+                                    <h5 style="text-align: center;color: red;">No review available!</h5>
+                                </g:if>
+                                <g:else>
+                                    <iframe src="${bookData?.previewUrl}?view=theater&wrapper=false"
+                                            title="${bookData?.bookTitle}"
+                                            class="bookPreview"></iframe>
+                                </g:else>
+
                             </div>
                         </div>
                     </div>

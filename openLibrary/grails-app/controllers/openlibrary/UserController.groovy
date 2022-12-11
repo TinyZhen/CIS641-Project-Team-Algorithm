@@ -32,7 +32,7 @@ class UserController {
 
     def addBookToList() {
         def bookId = params?.bookId?.toString()
-        def userId = 1 //change value here
+        def userId = params?.userId?.toString()?.toLong()
         def isbn = params?.isbn?.toString()
         def responseCode = userService.addBookToList(bookId, userId, isbn)
         if (responseCode == 200) {
