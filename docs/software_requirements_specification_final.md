@@ -187,7 +187,7 @@ In this section, we will show the links between all artifacts and requirements.
 
 ## Activity Diagram Traceability  
 
-| Artifact ID  | Artifact Name | Requirement ID | 
+| Artifact Name | Requirement ID | 
 | :-------------: | :----------: | :----------: | 
 | [activity diagram](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/Activitydiagram/activity_diagram.png) | FR1-23, NFR2 | 
 
