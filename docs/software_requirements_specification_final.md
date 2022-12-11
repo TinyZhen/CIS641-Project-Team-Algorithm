@@ -179,7 +179,7 @@ In this section, we will show the links between all artifacts and requirements.
 
 | Artifact Name | Requirement ID | 
 | :-------------: |:----------: | 
-| User |  | 
+| User | NF1, | 
 | UserBookList |  |   
 | BookWrapper |   |  
 | Review |   |  
@@ -191,12 +191,17 @@ In this section, we will show the links between all artifacts and requirements.
 
 | Artifact ID  | Artifact Name | Requirement ID | 
 | :-------------: | :----------: | :----------: | 
-| <filename> | Handle Player Input | FR1-5, NFR2 | 
-| … | … | … |   
+| <activity diagram> | FR1-23, NFR2 | 
+
 
 # Software Artifacts  
 
-<Describe the purpose of this section>  
+This section direct the link to the artifacts we made for this project
 
-* [I am a link](to_some_file.pdf)
-
+* [Use Case Diagram](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/UseCaseDiagram/Use case .pdf)
+* [Class Diagram](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/ClassDiagram/classDiagram.png)
+* [Activity Diagram](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/Activitydiagram/activity_diagram.png)
+* [Gantt Chart](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/GanttChart/Team Algorithm - GANTT Chart - Gantt Chart 2022.pdf)
+* [Search Sequence Dragram](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/SequenceDiagram/search_sequence.png)
+* [bookdetail Sequence Dragram](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/SequenceDiagram/sequence_diagram_bookdetail.png)
+* [Database Table](https://github.com/TinyZhen/CIS641-Project-Team-Algorithm/tree/master/artifacts/Database%20%20Table)
