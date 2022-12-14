@@ -73,7 +73,7 @@ In this section we will introdue the functional and nonfunctional requirements o
 | FR19 | The user shall be able to give reviews when logged in | 
 | FR20 | Only the user who gives a comment shall have the privilege of removing the comments | 
 | FR21 | The System shall display the review from other users | 
-| FR22 | The user shall type in the textfield to submit review |  
+| FR22 | The review text field shall be visible when user logged in |  
 
 ### Search result
 
